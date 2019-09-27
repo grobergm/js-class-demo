@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login-Demo</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="Login.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="card">
+		<div id="alert" class="alert alert-primary" role="alert">Enter Your Password to get Secrets</div>
+		<div class="card-body">
+		  <h5 class="card-title">Log In</h5>
+		  <form class="form-inline">
+			  <div class="form-group mb-2">
+			    <label for="staticEmail" class="sr-only">Email</label>
+			    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+			  </div>
+			  <div class="form-group mx-sm-3 mb-2">
+			    <label for="inputPassword" class="sr-only">Password</label>
+			    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+			  </div>
+			  <button id="secretButton" type="button" class="btn btn-primary mb-2">Get Secrets</button>
+			</form>
+		</div>
+	</div>
+	<h2>Secrets:</h2>
+	<ul id="secretDisplay" class="list-group list-group-flush"></ul>
+</body>
+</html>
